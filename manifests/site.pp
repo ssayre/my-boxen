@@ -62,6 +62,9 @@ node default {
   # do the above automatically, and create a db
   postgresql::db { 'steve': }
 
+  include wget
+
+
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
@@ -87,7 +90,7 @@ node default {
     ]:
   }
 
-  file { "${boxen::config::srcdir}/our-boxen":
+  file { "${boxen::config::srcdir}/my-boxen":
     ensure => link,
     target => $boxen::config::repodir
   }

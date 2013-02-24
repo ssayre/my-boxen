@@ -33,8 +33,8 @@ github "nvm",      "1.0.0"
 github "ruby",     "1.0.0"
 github "stdlib",   "3.0.0", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",     "1.0.0"
-github "postgresql", "1.0.0"
-
+github "postgresql", "1.0.0", :repo => "boxen/puppet-postgresql"
+github "wget", "1.0.0", :repo => "boxen/puppet-wget"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
